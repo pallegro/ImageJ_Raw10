@@ -18,7 +18,7 @@
 
 	<name>Raw 10-bit image sequence</name>
 	<description>Format support for 10-bit packed image sequence.</description>
-	<url>https://github.com/ORG/REPO</url>
+	<url>https://github.com/pallegro/ImageJ_Raw10</url>
 	<inceptionYear>2013</inceptionYear>
 	<organization>
 		<name>ORGANIZATION NAME</name>
@@ -34,8 +34,8 @@
 
 	<developers>
 		<developer>
-			<id>GITHUB_ID</id>
-			<name>FULL NAME</name>
+			<id>pallegro</id>
+			<name>Paul Hollensen</name>
 			<url>https://imagej.net/User:IMAGEJ_WIKI_ACCOUNT</url>
 		</developer>
 	</developers>
@@ -53,14 +53,14 @@
 	</mailingLists>
 
 	<scm>
-		<connection>scm:git:git://github.com/ORG/REPO</connection>
-		<developerConnection>scm:git:git@github.com:ORG/REPO</developerConnection>
+		<connection>scm:git:git://github.com/pallegro/ImageJ_Raw10</connection>
+		<developerConnection>scm:git:git@github.com:pallegro/ImageJ_Raw10</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/ORG/REPO</url>
+		<url>https://github.com/pallegro/ImageJ_Raw10</url>
 	</scm>
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>http://github.com/ORG/REPO/issues</url>
+		<url>http://github.com/pallegro/ImageJ_Raw10/issues</url>
 	</issueManagement>
 	<ciManagement>
 		<system>None</system>
