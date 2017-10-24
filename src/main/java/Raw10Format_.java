@@ -123,10 +123,10 @@ public class Raw10Format_ extends AbstractFormat {
 				s.read(buf);
 				for (int j=0; j < width_bytes; j+=5, i+=4) {
 					//2:10, 12:20, 22:30, 32:40
-					out[i+0] = (byte)((buf[j+0] >> 2) | ((buf[j+1] << 6) & 255));
-					out[i+1] = (byte)((buf[j+1] >> 4) | ((buf[j+2] << 4) & 255));
-					out[i+2] = (byte)((buf[j+2] >> 6) | ((buf[j+3] << 2) & 255));
-					out[i+3] = buf[j+4];
+					out[i+0] = (byte)(((buf[j+0] & 0xFC) >> 2) | ((buf[j+1] & 0x03) << 6));
+					out[i+1] = (byte)(((buf[j+1] & 0xF0) >> 4) | ((buf[j+2] & 0x0F) << 4));
+					out[i+2] = (byte)(((buf[j+2] & 0xC0) >> 6) | ((buf[j+3] & 0x3F) << 2));
+					out[i+3] =          buf[j+4];
 				}
 			}
 			return plane;
